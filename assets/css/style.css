@@ -1,9 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Economica:400,700|Roboto+Slab:400,700');
 
-html, body {
+/*********************************
+ # Resets
+*********************************/
+
+html,
+body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+}
+
+/*********************************
+ # Nice to haves
+*********************************/
+
+.custom-btn {
+    min-width: 160px;
+    color: #fff;
+    font-family: 'Economica', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 12px 8px;
+    transition: 0.35s all ease-in-out;
+}
+
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:focus {
+    border-color: #b4b0a2;
+    background-color: #e2ddcb;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #e30100;
+    border-color: #b50000;
+}
+
+.btn-splitter {
+    color: #fff;
+    margin: 0 10px;
+}
+
+#bg--e2ddcb {
+    background-color: #e2ddcb;
+}
+
+.padding-tb-50 {
+    padding: 50px;
 }
 
 /*********************************
@@ -22,7 +72,7 @@ html, body {
 }
 
 .navbar:before {
-    box-shadow: 0 0 10em 5em rgba(11, 10, 16, 0.66);
+    box-shadow: 0 0 10em 10em rgba(11, 10, 16, 0.8);
     position: absolute;
     width: 100%;
 }
@@ -57,7 +107,7 @@ html, body {
     .nav>li>a:focus,
     .nav>li>a:hover {
         background-color: transparent;
-        color: red;
+        color: #e30100;
         text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
 
     }
@@ -69,10 +119,50 @@ html, body {
 
 #push-up {
     margin-top: -93.49px;
+    width: 100vw;
+    height: 90vh;
 }
 
-.hero {
-    width: 100vw;
-    height: 100vh;
+#push-up:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.27);
+}
+
+.hero-section {
+    width: 100vw;
+    height: 90vh;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.hero-section h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: 4px;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+.hero-section h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
 }
