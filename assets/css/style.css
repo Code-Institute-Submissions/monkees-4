@@ -287,8 +287,9 @@ body {
 
 footer {
     z-index: 999;
-    background: url('../images/footer.jpg');
+    background: url('../images/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top -100px center;
     color: #fff;
 }
