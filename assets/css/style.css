@@ -293,3 +293,7 @@ footer {
     background-position: top -100px center;
     color: #fff;
 }
+
+.margin-t-50 {
+    margin-top: 50px;
+}
