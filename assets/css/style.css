@@ -70,6 +70,10 @@ body {
     padding-bottom: 75px;
 }
 
+.margin-t-50 {
+    margin-top: 50px;
+}
+
 .header {
     margin: 0 0 50px 0;
     font-weight: 700;
@@ -106,109 +110,24 @@ body {
     text-align: center;
 }
 
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
-    text-align: center;
-}
-
-.footer-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer-list li {
-    padding-bottom: 5px;
-}
-
-.footer-list li a {
-    color: #fafafa;
-}
-
-.social-links li {
-    padding: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    height: 32.4px;
-    width: 32.4px;
-    text-align: center;
-}
-
-.social-links li a {
-    color: #e30100;
-}
-
-.name,
-.street,
-.region,
-.postcode,
-.country {
-    display: block;
-    padding-bottom: 5px;
-}
-
 /*********************************
  # Navbar Styling
 *********************************/
 
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 .navbar {
-    background-color: transparent;
-    border-radius: 0;
-    border: 0;
-    margin-bottom: 0;
     position: relative;
-    top: 0;
-    left: 0;
     z-index: 999;
+    background-color: transparent;
 }
 
 .navbar:before {
     box-shadow: 0 0 10em 10em rgba(11, 10, 16, 0.8);
     position: absolute;
     width: 100%;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: #fff;
-        font-weight: 700;
-        font-family: 'Economica', sans-serif;
-        letter-spacing: 1px;
-        font-size: 16px;
-        transition: 0.35s all ease-in-out;
-    }
-
-    #navbar-primary .navbar-nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    #navbar-primary .navbar-nav>li {
-        display: inline-block;
-        float: none;
-    }
-
-    #navbar-primary .navbar-nav>li>a {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .nav>li>a:focus,
-    .nav>li>a:hover {
-        background-color: transparent;
-        color: #e30100;
-        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
-
-    }
 }
 
 /*********************************
@@ -278,67 +197,165 @@ body {
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
 }
 
-/**/
+/*********************************
+ # Playlist Styling
+*********************************/
 
-.important h3 {
-    text-align: center;
-    font-family: 'Economica', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+.spotify-embeds {
+    width: 100%;
+    padding: 0;
 }
 
-.important h3 i {
+.spotify-embed:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.spotify-embed iframe {
     display: block;
-    margin: 0 auto 20px auto;
-    font-size: 36px;
-    line-height: 66px;
-    height: 66px;
-    width: 66px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #b4b0a2;
+    transition: opacity 0.125s;
 }
 
-.important p {
-    text-align: center;
+.js .spotify-embed iframe {
+    opacity: 0;
 }
 
-/**/
+.js .spotify-embed iframe.loaded {
+    opacity: 1;
+}
+
+/*********************************
+ # Footer Styling
+*********************************/
 
 footer {
     z-index: 999;
     background: url('../images/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top -100px center;
+    background-position: center center;
     color: #fff;
 }
 
-.margin-t-50 {
-    margin-top: 50px;
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-list li {
+    padding-bottom: 5px;
+}
+
+.footer-list li a {
+    color: #fafafa;
+}
+
+.social-links li {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 32.4px;
+    width: 32.4px;
+    text-align: center;
+}
+
+.social-links li a {
+    color: #e30100;
+}
+
+.name,
+.street,
+.region,
+.postcode,
+.country {
+    display: block;
+    padding-bottom: 5px;
 }
 
 
-.spotify-embeds {
-  width: 100%;
-  padding: 0;
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    /*********************************
+     # Navbar Styling
+    *********************************/
+    .navbar {
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Economica', sans-serif;
+        letter-spacing: 1px;
+        font-size: 16px;
+        transition: 0.35s all ease-in-out;
+    }
+
+    #navbar-primary .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar-primary .navbar-nav>li {
+        display: inline-block;
+        float: none;
+    }
+
+    #navbar-primary .navbar-nav>li>a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+        background-color: transparent;
+        color: #e30100;
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
+
+    }
 }
 
-.spotify-embed {
-  background: #282828;
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+
+    #navbar-primary .navbar-nav>li>a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /*********************************
+     # Nice to haves
+    *********************************/
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .center {
+        text-align: center;
+    }
 }
-.spotify-embed:not(:last-of-type) {
-  margin-bottom: 5px;
-}
-.spotify-embed iframe {
-  display: block;
-  transition: opacity 0.125s;
-}
-.js .spotify-embed iframe {
-  opacity: 0;
-}
-.js .spotify-embed iframe.loaded {
-  opacity: 1;
-}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
