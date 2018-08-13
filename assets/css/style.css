@@ -63,7 +63,7 @@ body {
 }
 
 .padding-tb-50 {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .padding-b-75 {
@@ -179,7 +179,7 @@ body {
     font-weight: 700;
     font-family: 'Roboto Slab', sans-serif;
     letter-spacing: 4px;
-    font-size: 80px;
+    font-size: 50px;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
@@ -191,7 +191,7 @@ body {
     color: #fff;
     font-weight: 400;
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 36px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 30px;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
@@ -270,6 +270,18 @@ footer {
 .country {
     display: block;
     padding-bottom: 5px;
+}
+
+
+
+.table {
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.table th,
+.table td {
+    width: 25%;
 }
 
 
@@ -353,6 +365,14 @@ footer {
 
     .center {
         text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 80px;
+    }
+    
+    .hero-section h3 {
+        font-size: 36px;
     }
 }
 
