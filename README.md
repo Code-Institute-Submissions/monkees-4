@@ -58,3 +58,5 @@ During this time, as a feature was implemented, it got backed up in my version c
 
 ### Links
 
+[Responsive Spotify Embeds](https://codepen.io/jbasoo/pen/gDkoc)
+[Vide.js - Full Width Video Background](https://vodkabears.github.io/vide/)

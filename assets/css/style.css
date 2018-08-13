@@ -53,16 +53,16 @@ body {
     margin: 0 10px;
 }
 
-#bg--e2ddcb {
+.bg--e2ddcb {
     background-color: #e2ddcb;
 }
 
-#bg--e2ddcb-overlay {
+.bg--e2ddcb-overlay {
     background: #e2ddcb;
     background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
 }
 
-#bg--e30100 {
+.bg--e30100 {
     background-color: #e30100;
 }
 
@@ -235,6 +235,8 @@ body {
     display: block;
     transition: opacity 0.125s;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 0;
+    background-color: transparent;
 }
 
 .js .spotify-embed iframe {
