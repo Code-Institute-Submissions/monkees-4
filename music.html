@@ -45,6 +45,36 @@
             </div>
         </nav>
     </header>
+    <!-- Hero -->
+    <section id="push-up" class="container-fluid" style="background-image: url('https://img00.deviantart.net/50da/i/2012/078/8/a/rainbow_room__davy_jones___monkees_tribute__by_dascottjr-d4t864n.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="row">
+            <div class="hero-section">
+                <div class="col-xs-12">
+                    <h1>Take a listen!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Playlist -->
+    <section class="bg--e2ddcb-overlay padding-tb-50 padding-b-75">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="general-title">Listen to our album!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="spotify-embeds">
+                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:oosabaj:playlist:2UDe8QqHAXUaLrdb0QsDGE" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:oosabaj:playlist:51vBEL5eVtII7uIEDltWwB" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:dembsky:playlist:7qfcDxieRKE6VOFE3YNKbz" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:thech053none:playlist:3epVhtO7ZWOB4DzuJFY5da" width="340" height="80"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="padding-tb-50">
         <div class="container">
@@ -101,6 +131,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Vide JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+    
+    <script>
+        $(window).on('load resize', function() {
+            $('iframe[src*="embed.spotify.com"]').each( function() {
+                $(this).css('width', $(this).parent().css('width'));
+                $(this).attr('src', $(this).attr('src'));
+                $(this).removeClass('loaded');
+    
+                $(this).on('load', function(){
+                    $(this).addClass('loaded');
+                });
+            });
+        });
+    </script>
 
 </body>
 
