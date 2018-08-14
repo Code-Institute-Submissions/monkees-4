@@ -247,6 +247,29 @@ body {
     opacity: 1;
 }
 
+/* events */
+
+.events h3 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Economica', sans-serif;
+    letter-spacing: 1px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.events h3 i {
+    display: block;
+    margin: 0 auto 20px auto;
+    font-size: 64px;
+}
+
+.btn-align {
+    text-align: center;
+}
+
 /*********************************
  # Footer Styling
 *********************************/
