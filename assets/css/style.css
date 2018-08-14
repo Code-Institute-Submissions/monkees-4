@@ -98,6 +98,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 26px;
 }
 
@@ -249,6 +250,10 @@ body {
 
 /* events */
 
+.events {
+    margin-bottom: 30px;
+}
+
 .events h3 {
     text-align: center;
     color: #fff;
@@ -293,8 +298,17 @@ footer {
     padding-bottom: 5px;
 }
 
-.footer-list li a {
+.footer-list li a,
+.footer-link-bio{
     color: #fafafa;
+    text-decoration: none;
+    transition: 0.35s all ease-in-out;
+}
+
+.footer-list li a:hover,
+.footer-link-bio:hover {
+    color: #e30100;
+    text-decoration: none;
 }
 
 .social-links li {
@@ -341,6 +355,11 @@ footer {
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
+    
+    .events {
+        margin-bottom: 0;
+    }
+    
     /*********************************
      # Navbar Styling
     *********************************/
