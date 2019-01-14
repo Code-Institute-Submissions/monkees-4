@@ -407,11 +407,21 @@ footer {
 .slick-next, .slick-prev {
     width: 30px !important;
     height: 30px !important;
+    z-index: 999 !important;
+}
+
+.slick-next {
+    right: 10px !important;
+}
+
+.slick-prev {
+    left: 10px !important;
 }
 
 .slick-next:before, .slick-prev:before {
     font-size: 30px !important;
-    color: #333 !important;
+    color: #e30100 !important;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -427,6 +437,11 @@ footer {
     
     .hero-section h1 {
         margin: 50px 0 0 0;
+    }
+    
+    .tour-slider img.slider-image {
+        max-height: 225px;
+        min-height: 225px;
     }
 }
 

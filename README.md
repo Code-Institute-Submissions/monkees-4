@@ -73,7 +73,6 @@ Currently there is no difference between the deployment version and the developm
 [Content for the about section](https://en.wikipedia.org/wiki/The_Monkees)\
 [Content for band members](https://www.monkees.net/)\
 [Tour slide image](https://www.monkees.net/wp-content/uploads/2014/03/monkees2014.jpg)\
-[Tour slide image](https://cdn.eventfinda.co.nz/uploads/events/transformed/812571-376379-34.jpg?v=3)\
 [Tour slide image](https://www.hollywoodreporter.com/review/monkees-greek-theatre-concert-review-388603)\
 [Footer background image](https://www.bbc.co.uk/music/artists/b8549efe-f4fd-4dc0-8ef1-226e9c400233)\
 [Responsive Spotify Embeds](https://codepen.io/jbasoo/pen/gDkoc)\
