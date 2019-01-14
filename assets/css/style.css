@@ -148,6 +148,10 @@ hr {
     padding: 15px 0;
 }
 
+.inner-background {
+    background-image: url('https://img00.deviantart.net/50da/i/2012/078/8/a/rainbow_room__davy_jones___monkees_tribute__by_dascottjr-d4t864n.jpg'); background-repeat: no-repeat; background-size: cover;
+}
+
 /*********************************
  # Navbar Styling
 *********************************/
@@ -385,7 +389,25 @@ footer {
     width: 25%;
 }
 
+.tour-slider {
+    margin-bottom: 50px;
+}
 
+.tour-slider img.slider-image {
+    max-height: 365px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slick-next, .slick-prev {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 30px !important;
+    color: #333 !important;
+}
 
 
 
