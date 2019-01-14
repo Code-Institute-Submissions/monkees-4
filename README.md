@@ -65,6 +65,9 @@ I also manually tested multiple elements of the website myself to ensure that th
 3. Contact form fields (for validation purposes). I tested an empty form, all fields filled in as well as filling in an invalid email address.
 
 ### Deployment
+To deploy my website to Github Pages was simple. I went to settings, scrolled down to Github Pages and selected my repositories master from the source and hit save.
+
+Currently there is no difference between the deployment version and the development version but in the future, it may be cool to branch out and keep the master version running whilst using a separate branch to test new things. 
 
 ### Credits
 [Content for the about section](https://en.wikipedia.org/wiki/The_Monkees)\
