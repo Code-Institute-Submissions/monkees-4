@@ -131,6 +131,10 @@ body {
     margin-bottom: 25px;
 }
 
+.margin-top-25 {
+    margin-top: 25px;
+}
+
 .white {
     color: #fff;
 }
