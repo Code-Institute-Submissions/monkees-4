@@ -67,7 +67,7 @@ I also manually tested multiple elements of the website myself to ensure that th
 ### Deployment
 
 ### Credits
-[Content for the about section](https://en.wikipedia.org/wiki/The_Monkees)
+[Content for the about section](https://en.wikipedia.org/wiki/The_Monkees)\
 [Content for band members](https://www.monkees.net/)
 [Tour slide image](https://www.monkees.net/wp-content/uploads/2014/03/monkees2014.jpg)
 [Tour slide image](https://cdn.eventfinda.co.nz/uploads/events/transformed/812571-376379-34.jpg?v=3)
