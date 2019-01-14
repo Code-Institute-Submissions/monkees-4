@@ -70,10 +70,10 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="spotify-embeds">
-                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:oosabaj:playlist:2UDe8QqHAXUaLrdb0QsDGE" width="340" height="80"></iframe></div>
-                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:oosabaj:playlist:51vBEL5eVtII7uIEDltWwB" width="340" height="80"></iframe></div>
-                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:dembsky:playlist:7qfcDxieRKE6VOFE3YNKbz" width="340" height="80"></iframe></div>
-                        <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify:user:thech053none:playlist:3epVhtO7ZWOB4DzuJFY5da" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/3G7tRC24Uh09Hmp1KZ7LQ2" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/7uEcCGtM1FBBGIhPozhJjv" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/1XxRYmDKuABtbtCozx3pA2" width="340" height="80"></iframe></div>
+                        <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/20wbR4HxNaR4gWjMLQvUp2" width="340" height="80"></iframe></div>
                     </div>
                 </div>
             </div>
@@ -214,7 +214,7 @@
     
     <script>
         $(window).on('load resize', function() {
-            $('iframe[src*="embed.spotify.com"]').each( function() {
+            $('iframe[src*="open.spotify.com"]').each( function() {
                 $(this).css('width', $(this).parent().css('width'));
                 $(this).attr('src', $(this).attr('src'));
                 $(this).removeClass('loaded');
@@ -227,42 +227,42 @@
     </script>
     
     <script>
-        // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
+    // Select all links with hashes
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+        ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
         // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
             return false;
-          } else {
+        } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+        };
         });
-      }
-    }
-  });
+        }
+        }
+    });
     </script>
 
 </body>
