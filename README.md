@@ -68,6 +68,7 @@ I also manually tested multiple elements of the website myself to ensure that th
 
 ### Credits
 [Content for the about section](https://en.wikipedia.org/wiki/The_Monkees)
+[Content for band members](https://www.monkees.net/)
 [Footer background image](https://www.bbc.co.uk/music/artists/b8549efe-f4fd-4dc0-8ef1-226e9c400233)
 [Responsive Spotify Embeds](https://codepen.io/jbasoo/pen/gDkoc)
 [Vide.js - Full Width Video Background](https://vodkabears.github.io/vide/)

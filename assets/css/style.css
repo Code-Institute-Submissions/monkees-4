@@ -140,6 +140,10 @@ body {
     z-index: 999;
 }
 
+hr {
+    margin: 50px 0;
+}
+
 /*********************************
  # Navbar Styling
 *********************************/
@@ -185,7 +189,7 @@ body {
 #push-up {
     margin-top: -93.49px;
     width: 100vw;
-    height: 90vh;
+    height: 45vh;
 }
 
 #push-up:before {
@@ -214,10 +218,15 @@ body {
 
 .hero-section {
     width: 100vw;
-    height: 90vh;
+    height: 45vh;
     vertical-align: middle;
     text-align: center;
     display: table-cell;
+}
+
+.home #push-up,
+.home .hero-section {
+    height: 90vh;
 }
 
 .hero-section h1 {
