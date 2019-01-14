@@ -419,6 +419,12 @@ footer {
 
 /* Small Devices, Tablets */
 
+@media only screen and (max-width: 767px) {
+    .mobile-left {
+        text-align: left;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     
     .events {
