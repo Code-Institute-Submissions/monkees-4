@@ -423,6 +423,10 @@ footer {
     .mobile-left {
         text-align: left;
     }
+    
+    .hero-section h1 {
+        margin: 50px 0 0 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
