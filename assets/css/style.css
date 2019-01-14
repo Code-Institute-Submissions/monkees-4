@@ -443,6 +443,10 @@ footer {
         max-height: 225px;
         min-height: 225px;
     }
+    
+    .mob-margin-top-25 {
+        margin-top: 25px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
