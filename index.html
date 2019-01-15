@@ -214,59 +214,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Vide JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
-    
-    <script>
-        $(window).on('load resize', function() {
-            $('iframe[src*="open.spotify.com"]').each( function() {
-                $(this).css('width', $(this).parent().css('width'));
-                $(this).attr('src', $(this).attr('src'));
-                $(this).removeClass('loaded');
-    
-                $(this).on('load', function(){
-                    $(this).addClass('loaded');
-                });
-            });
-        });
-    </script>
-    
-    <script>
-    // Select all links with hashes
-    $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-        // On-page links
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
-            location.hostname == this.hostname
-        ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000, function() {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
-        });
-        }
-        }
-    });
-    </script>
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
 
 </body>
 
