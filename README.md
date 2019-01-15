@@ -64,6 +64,8 @@ I also manually tested multiple elements of the website myself to ensure that th
 2. Spotify embeds, to ensure music plays accordingly
 3. Contact form fields (for validation purposes). I tested an empty form, all fields filled in as well as filling in an invalid email address.
 
+I also ran my website through W3 Validator and it passed with no errors / warnings.
+
 ### Deployment
 To deploy my website to Github Pages was simple. I went to settings, scrolled down to Github Pages and selected my repositories master from the source and hit save.
 
@@ -78,3 +80,4 @@ Currently there is no difference between the deployment version and the developm
 [Responsive Spotify Embeds](https://codepen.io/jbasoo/pen/gDkoc)\
 [Vide.js - Full Width Video Background](https://vodkabears.github.io/vide/)\
 [Slick Carousel](https://kenwheeler.github.io/slick/)
+[W3 Validator](https://validator.w3.org)
